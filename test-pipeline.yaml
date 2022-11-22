@@ -1,4 +1,9 @@
 - task: AzureCLI@2
+- task: AzureCLI@2
+  inputs:
+    scriptLocation: 'scriptPath'
+    scriptPath: 
+    addSpnToEnvironment: true
   displayName: Azure CLI
   inputs:
     azureSubscription: US_Subscription_SP
